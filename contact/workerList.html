@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact System">
+  <meta property="og:url" content="http://metrix.urx.co.kr">
+  <meta property="og:description" content="MetriX URX Contact System">
+  <meta property="og:image" content="/public/img/common/img-share.png">
+  <link rel="short cut icon" type="image/x-icon" href="/public/img/icon/favicon.png">
+  <title>Contact System</title>
+
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+  <!-- 면접원 리스트 페이지 -->
+  <div id="wrap" class="workerListPage">
+    <div id="header" class="typeDefault"></div>
+
+    <div id="main" class="center w-980">
+      <div class="wrapper">
+        <!-- 페이지 탑 섹션 -->
+        <section class="page-top">
+          <div class="section__inner">
+            <h2 class="page-title">면접원 관리</h2>
+          </div>
+        </section>
+
+        <!-- 페이지 컨텐츠 섹션 -->
+        <section class="page-content">
+          <div class="section__inner">
+            <!-- 섹션 타이틀 -->
+            <div class="section-title__wrap">
+              <h3 class="section-title blind">면접원 리스트</h3>
+              <div class="section-info">
+                <p class="info-item">
+                  <span class="info--name">면접원수: </span>
+                  <span class="info--num">81명</span>
+                </p>
+              </div>
+            </div>
+            <!-- 섹션 컨텐츠 -->
+            <div class="section-content__wrap">
+              <div class="section-content__inner">
+                <!-- 컨텐츠 유틸 랩 // 리스트형식 대응 -->
+                <div class="content-util__wrap list">
+                  <div class="contents-search__box">
+                    <p class="select__wrap listUtil">
+                      <select name="" id="">
+                        <option value="">검색항목</option>
+                        <option value="">면접원</option>
+                        <option value="">ID</option>
+                      </select>
+                    </p>
+                    <p class="search__wrap listUtil">
+                      <label class="input-label">
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                      </label>
+                      <button>검색</button>
+                    </p>
+                    <p class="btn listUtil reset"><button>초기화</button></p>
+                  </div>
+                  <p class="btn listUtil reset"><button>추가</button></p>
+                </div>
+                <!-- 컨텐츠 랩 // 리스트형식 -->
+                <div class="content__wrap list workerList">
+                  <ul class="content__list">
+                    <li class="content__line list--head">
+                      <div class="line__item itemNo"><span>NO.</span></div>
+                      <div class="line__item itemWorker"><span>면접원</span></div>
+                      <div class="line__item itemWorkerId"><span>ID</span></div>
+                      <div class="line__item itemWorkerType">
+                        <p class="select__wrap lisHead">
+                          <select name="selectWorkerType" id="selectWorkerType">
+                            <option value="">유형</option>
+                            <option value="">전화면접원</option>
+                            <option value="">방문면접원</option>
+                            <option value="">슈퍼바이저</option>
+                          </select>
+                        </p>
+                      </div>
+                      <div class="line__item itemIntervieweeId"><span>대상 ID</span></div>
+                      <div class="line__item itemAssignNum"><span>할당수</span></div>
+                      <div class="line__item itemRegistDate"><span>등록일</span></div>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>81</span></p>
+                        <p class="line__item itemWorker"><span>81면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0081</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>81</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>80</span></p>
+                        <p class="line__item itemWorker"><span>80면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0080</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>80</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>79</span></p>
+                        <p class="line__item itemWorker"><span>79면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0079</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>79</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>78</span></p>
+                        <p class="line__item itemWorker"><span>78면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0078</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>78</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>77</span></p>
+                        <p class="line__item itemWorker"><span>77면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0077</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>77</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>76</span></p>
+                        <p class="line__item itemWorker"><span>76면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0076</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>76</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>75</span></p>
+                        <p class="line__item itemWorker"><span>75면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0075</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>75</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>74</span></p>
+                        <p class="line__item itemWorker"><span>74면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0074</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>74</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>73</span></p>
+                        <p class="line__item itemWorker"><span>73면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0073</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>73</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>72</span></p>
+                        <p class="line__item itemWorker"><span>72면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0072</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>72</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>71</span></p>
+                        <p class="line__item itemWorker"><span>71면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0071</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>71</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>70</span></p>
+                        <p class="line__item itemWorker"><span>70면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0070</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>70</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>69</span></p>
+                        <p class="line__item itemWorker"><span>69면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0069</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>69</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>68</span></p>
+                        <p class="line__item itemWorker"><span>68면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0068</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>68</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>67</span></p>
+                        <p class="line__item itemWorker"><span>67면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0067</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>67</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>66</span></p>
+                        <p class="line__item itemWorker"><span>66면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0066</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>66</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>65</span></p>
+                        <p class="line__item itemWorker"><span>65면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0065</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>65</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>64</span></p>
+                        <p class="line__item itemWorker"><span>64면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0064</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>64</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>63</span></p>
+                        <p class="line__item itemWorker"><span>63면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0063</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>63</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./workerView.html" class="link-area">
+                        <p class="line__item itemNo"><span>62</span></p>
+                        <p class="line__item itemWorker"><span>62면접원</span></p>
+                        <p class="line__item itemWorkerId"><span>0062</span></p>
+                        <p class="line__item itemWorkerType"><span>방문면접원</span></p>
+                        <p class="line__item itemIntervieweeId"><span>62</span></p>
+                        <p class="line__item itemAssignNum"><span>1</span></p>
+                        <p class="line__item itemRegistDate"><span>00-00 00:00</span></p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 페이지 넘버 랩 // 현재페이지: .nowOn -->
+                <div class="page-num__box list">
+                  <div class="page-num__wrap">
+                    <p class="arrow-btn prev"><button>Prev</button></p>
+                    <ul class="page-num__list">
+                      <li class="page-num__item nowOn"><span>1</span></li>
+                      <li class="page-num__item"><span>2</span></li>
+                      <li class="page-num__item"><span>3</span></li>
+                      <li class="page-num__item"><span>4</span></li>
+                    </ul>
+                    <p class="arrow-btn next"><button>Next</button></p>
+                  </div>
+                  <div class="page-search__wrap">
+                    <label class="input-label pageSearch">
+                      <input type="number">
+                      <button class="label-btn">이동</button>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </div>
+
+  <script src="/public/js/jquery-3.5.1.js"></script>
+  <script src="/public/js/include.js"></script>
+  <script src="/public/js/index.js"></script>
+</body>
+
+</html>
