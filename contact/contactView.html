@@ -179,35 +179,78 @@
                     <div class="content--default">
                       <div class="result-type__box">
                         <div class="type__wrap contact">
-                          <ul class="type__list">
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">1. 컨택완료</span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">2. 응답거절 </span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">3. 비수신(4회 미만)</span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">4. 장기 비수신(4회 이상)</span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">5. 장기 출타</span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">6. 질병(몸이 아파서)</span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">7. 병원 입원</span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt">8. 연락처 불명(전혀 다른사람 연락처)</span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt"></span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt"></span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt"></span></label></li>
-                            <li class="type__item"><label class="input-label"><input type="radio"><span
-                                  class="label--txt"></span></label></li>
-                          </ul>
+                          <div class="wrap--head">
+                            <h4 class="wrap-title">컨택 결과</h4>
+                          </div>
+                          <div class="wrap--body">
+                            <ul class="type__list">
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">1. 컨택완료</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">2. 응답거절 </span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">3. 비수신(4회 미만)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">4. 장기 비수신(4회 이상)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">5. 장기 출타</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">6. 질병(몸이 아파서)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">7. 병원 입원</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">8. 연락처 불명(전혀 다른사람 연락처)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">9. 조사대상자 아님(만17세 이사, 시설 장애인, 서울 외 거주)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">10. 조사불가지역 거주(해외 이민, 서울 외 지역으로 이사 등)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">11. 장애등록 취소</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">12. 기타(사유 작성 필요)</span></label></li>
+                            </ul>
+                            <p class="type-memo">
+                              <textarea id="typeMemoContact" cols="30" rows="10"></textarea>
+                            </p>
+                          </div>
+                          <div class="wrap--foot">
+                            <div class="btn btn--add"><button>조사결과 추가</button></div>
+                          </div>
                         </div>
-                        <div class="type__wrap survey">
-
+                        <div class="type__wrap visit">
+                          <div class="wrap--head">
+                            <h4 class="wrap-title">조사 결과</h4>
+                          </div>
+                          <div class="wrap--body">
+                            <ul class="type__list">
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">1. 조사 완료</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">2. 조사 중단</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">3. 응답거절(사유 작성 필요)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">4. 연락 두절(컨택 성공 후 비수신)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">5. 장기 출타</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">6. 질병(몸이 아파서)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">7. 병원 입원</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">8. 조사 대상자 아님(만 17세 이하, 시설 장애인, 서울 외 거주)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">9. 이사 등으로 조사불가지역 거주(해외 이민, 서울 외 지역으로 이사)</span></label></li>
+                              <li class="type__item"><label class="input-label"><input type="radio"><span
+                                    class="label--txt">10. 기타(사유 작성 필요)</span></label></li>
+                            </ul>
+                            <p class="type-memo">
+                              <textarea id="typeMemoVisit" cols="30" rows="10"></textarea>
+                            </p>
+                          </div>
+                          <div class="wrap--foot">
+                            <p class="btn btn--add"><button>컨택결과 추가</button></p>
+                          </div>
                         </div>
                       </div>
                     </div>
