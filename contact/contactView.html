@@ -173,11 +173,13 @@
                     </div>
                   </div>
                 </div>
-                <!-- 컨텍 결과 상세 //컨텐츠 형식 -->
+                <!-- 컨텍 결과 상세 // 컨텐츠 형식 -->
                 <div class="details--result__box">
                   <div class="content__wrap default">
                     <div class="content--default">
+                      <!-- 결과 타입 선택 박스 -->
                       <div class="result-type__box">
+                        <!-- 결과 타입 선택 랩 // 컨택 -->
                         <div class="type__wrap contact">
                           <div class="wrap--head">
                             <h4 class="wrap-title">컨택 결과</h4>
@@ -214,9 +216,10 @@
                             </p>
                           </div>
                           <div class="wrap--foot">
-                            <div class="btn btn--add"><button>조사결과 추가</button></div>
+                            <div class="btn btn--add"><button>컨택결과 추가</button></div>
                           </div>
                         </div>
+                        <!-- 결과 타입 선택 랩 // 조사 -->
                         <div class="type__wrap visit">
                           <div class="wrap--head">
                             <h4 class="wrap-title">조사 결과</h4>
@@ -249,7 +252,145 @@
                             </p>
                           </div>
                           <div class="wrap--foot">
-                            <p class="btn btn--add"><button>컨택결과 추가</button></p>
+                            <p class="btn btn--add"><button>조사결과 추가</button></p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 결과 리스트 박스 -->
+                      <div class="result-list__box">
+                        <!-- 결과 리스트 랩 // 컨택 -->
+                        <div class="list__wrap contact">
+                          <div class="wrap--head">
+                            <h4 class="wrap-title">컨택결과 (최신순)</h4>
+                            <!-- .btn--openner //
+                                 클릭하여 리스트 오픈 시 addclass >> .nowOn하여 아이콘 변경
+                                 클릭하여 리스트 클로스 시 removeclass >> .nowOn하여 아이콘 변경 -->
+                            <p class="btn btn--openner">-</p>
+                          </div>
+                          <div class="wrap--body">
+                            <ul class="result__list">
+                              <li class="list--head">
+                                <p class="item--date">일시</p>
+                                <p class="item--result">결과</p>
+                                <p class="item--memo">메모</p>
+                              </li>
+                              <li class="list__item">
+                                <p class="item--date"><span class="icon icon--del">x</span><span
+                                    class="txt--date">23.07.31 18:14</span></p>
+                                <p class="item--result"><span class="txt--result">9. 조사대상자 아님(만17세 이사, 시설 장애인, 서울 외
+                                    거주)</span></p>
+                                <p class="item--memo"><span class="txt--memo"></span></p>
+                              </li>
+                            </ul>
+                            <!-- table>
+                              <colgroup>
+                                <col width="">
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>일시</th>
+                                  <th>결과</th>
+                                  <th>메모</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="td--date"><span class="icon icon--del">x</span><span
+                                      class="txt--date">23.07.31 18:14</span></span></td>
+                                  <td class="td--result"><span class="txt--result">9. 조사대상자 아님(만17세 이사, 시설 장애인, 서울 외
+                                      거주)</span></td>
+                                  <td class="td--memo"><span class="txt--memo"></span></td>
+                                </tr>
+                              </tbody>
+                            </table -->
+                          </div>
+                        </div>
+                        <!-- 결과 리스트 랩 // 조사 -->
+                        <div class="list__wrap visit">
+                          <div class="wrap--head">
+                            <h4 class="wrap-title">조사결과 (최신순)</h4>
+                            <!-- .btn--openner //
+                                 클릭하여 리스트 오픈 시 addclass >> .nowOn하여 아이콘 변경
+                                 클릭하여 리스트 클로스 시 removeclass >> .nowOn하여 아이콘 변경 -->
+                            <p class="btn btn--openner">-</p>
+                          </div>
+                          <div class="wrap--body">
+                            <ul class="result__list">
+                              <li class="list--head">
+                                <p class="item--date">일시</p>
+                                <p class="item--result">결과</p>
+                                <p class="item--memo">메모</p>
+                              </li>
+                              <li class="list__item">
+                                <p class="item--date"><span class="icon icon--del">x</span><span
+                                    class="txt--date">23.07.31 18:14</span></p>
+                                <p class="item--result"><span class="txt--result">3. 비수신(4회 미만)</span></p>
+                                <p class="item--memo"><span class="txt--memo"></span></p>
+                              </li>
+                              <li class="list__item">
+                                <p class="item--date"><span class="icon icon--del">x</span><span
+                                    class="txt--date">23.07.31 18:14</span></p>
+                                <p class="item--result"><span class="txt--result">3. 비수신(4회 미만)</span></p>
+                                <p class="item--memo"><span class="txt--memo"></span></p>
+                              </li>
+                              <li class="list__item">
+                                <p class="item--date"><span class="icon icon--del">x</span><span
+                                    class="txt--date">23.07.31 18:14</span></p>
+                                <p class="item--result"><span class="txt--result">3. 비수신(4회 미만)</span></p>
+                                <p class="item--memo"><span class="txt--memo"></span></p>
+                              </li>
+                            </ul>
+                            <!-- table>
+                              <colgroup>
+                                <col width="">
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>일시</th>
+                                  <th>결과</th>
+                                  <th>메모</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="tr--empty">
+                                  <td colspan="3"><span>조회 결과가 없습니다.</span></td>
+                                </tr>
+                                <tr>
+                                  <td class="td--date"><span class="icon icon--del">x</span><span
+                                      class="txt--date">23.08.14 14:25</span></td>
+                                  <td class="td--result"><span class="txt--result">3. 비수신(4회 미만)</span></td>
+                                  <td class="td--memo"></td>
+                                </tr>
+                                <tr>
+                                  <td class="td--date"><span class="icon icon--del">x</span><span
+                                      class="txt--date">23.08.14 14:25</span></td>
+                                  <td class="td--result"><span class="txt--result">3. 비수신(4회 미만)</span></td>
+                                  <td class="td--memo"></td>
+                                </tr>
+                                <tr>
+                                  <td class="td--date"><span class="icon icon--del">x</span><span
+                                      class="txt--date">23.08.14 14:25</span></td>
+                                  <td class="td--result"><span class="txt--result">3. 비수신(4회 미만)</span></td>
+                                  <td class="td--memo"></td>
+                                </tr>
+                              </tbody>
+                            </table -->
+                          </div>
+                        </div>
+                        <div class="list__wrap history">
+                          <div class="wrap--head">
+                            <h4 class="wrap-title">수정·편집 현황</h4>
+                          </div>
+                          <div class="wrap--body">
+                            <!-- table>
+                              <colgroup>
+                                <col width="">
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                </tr>
+                              </thead>
+                            </table -->
                           </div>
                         </div>
                       </div>
