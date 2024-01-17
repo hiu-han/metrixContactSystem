@@ -14,6 +14,16 @@
   <title>Contact System</title>
 
   <link rel="stylesheet" href="/public/css/style.css">
+
+  <style>
+    .gnb__item#gnbMetrix>a {
+      color: var(--color-primary);
+    }
+
+    .gnb__item#gnbMetrix>a::before {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,12 +31,12 @@
   <div id="wrap" class="indexPage">
     <div id="header" class="typeIndex"></div>
 
-    <div id="main" class="center w-980">
-      <div class="wrapper">
+    <div id="main">
+      <div class="wrapper w-980">
         <!-- 페이지 탑 섹션 -->
         <section class="page-top">
           <div class="section__inner">
-            <h2 class="page-title blind">설문리스트</h2>
+            <h2 class="page-title">설문리스트</h2>
           </div>
         </section>
 
@@ -34,37 +44,42 @@
         <section class="page-content userList">
           <div class="section__inner">
             <!-- 섹션 타이틀 -->
-            <div class="section-title__wrap">
-              <h3 class="section-title">설문리스트</h3>
+            <!-- <div class="section-title__wrap">
+              <h3 class="section-title blind">설문리스트</h3>
               <p class="section-info">
                 <span class="info-item"></span>
               </p>
-            </div>
+            </div> -->
             <!-- 섹션 컨텐츠 -->
             <div class="section-content__wrap">
               <div class="section-content__inner">
                 <!-- 컨텐츠 유틸 랩 // 리스트형식 대응 -->
                 <div class="content-util__wrap list">
-                  <!--  -->
-                  <div class="contents-search__box">
-                    <p class="select__wrap listUtil">
-                      <select name="" id="">
-                        <option value="">설문명</option>
-                      </select>
-                    </p>
-                    <p class="search__wrap listUtil">
-                      <label class="input-label">
-                        <input type="text" placeholder="검색어를 입력해 주세요.">
-                      </label>
-                      <button>검색</button>
-                    </p>
-                    <p class="btn listUtil"><button>초기화</button></p>
+                  <div class="content-util--left"></div>
+                  <div class="content-util--right">
+                    <!--  -->
+                    <div class="content-util__box util--search">
+                      <p class="select__wrap listUtil">
+                        <select name="" id="">
+                          <option value="">설문명</option>
+                        </select>
+                        <span class="select-icon"></span>
+                      </p>
+                      <p class="search__wrap listUtil">
+                        <label class="input-label">
+                          <input type="text" placeholder="검색어를 입력해 주세요.">
+                          <button>검색</button>
+                        </label>
+                      </p>
+                      <p class="btn type04 listUtil reset"><button>초기화</button></p>
+                    </div>
+                    <p class="btn type01 listUtil add"><button>추가</button></p>
                   </div>
-                  <p class="btn listUtil reset"><button>추가</button></p>
                 </div>
                 <!-- 컨텐츠 랩 // 리스트형식 -->
                 <div class="content__wrap list">
                   <ul class="content__list">
+                    <!-- List Head -->
                     <li class="content__line list--head">
                       <div class="line__item itemNo"><span>NO.</span></div>
                       <div class="line__item itemCode"><span>코드</span></div>
@@ -77,6 +92,7 @@
                             <option value="">패널</option>
                             <option value="">컨택</option>
                           </select>
+                          <span class="select-icon"></span>
                         </p>
                       </div>
                       <div class="line__item itemState">
@@ -87,23 +103,31 @@
                             <option value="">비활성</option>
                             <option value="">마감</option>
                           </select>
+                          <span class="select-icon"></span>
                         </p>
                       </div>
                       <div class="line__item itemDate"><span>일자</span></div>
                     </li>
+
+                    <!-- 리스트 내 항목 없을 시 .content__line.empty 항목으로 사용 -->
+                    <!-- <li class="content__line list--body empty">
+                      <p class="line__item">설문 항목이 없습니다.</p>
+                    </li> -->
+
+                    <!-- 이하 List Body -->
                     <li class="content__line list--body">
-                      <a href="./contact/contactList.html" class="link-area">
-                        <div class="line__item itemNo"><span>4</span></div>
-                        <div class="line__item itemCode"><span>9</span></div>
-                        <div class="line__item itemName"><span>서울시 장애인 자립생활 실태조사</span></div>
-                        <div class="line__item itemType"><span>컨택</span></div>
-                        <div class="line__item itemState"><span>진행 중</span></div>
-                        <div class="line__item itemDate"><span>2023-07-24</span></div>
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>10</span></p>
+                        <p class="line__item itemCode"><span>9</span></p>
+                        <p class="line__item itemName"><span>서울시 장애인 자립생활 실태조사</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-24</span></p>
                       </a>
                     </li>
                     <li class="content__line list--body">
-                      <a href="./contact/contactList.html" class="link-area">
-                        <p class="line__item itemNo"><span>3</span></p>
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>9</span></p>
                         <p class="line__item itemCode"><span>2</span></p>
                         <p class="line__item itemName"><span>서울시 장애인 자립생활 실태조사</span></p>
                         <p class="line__item itemType"><span>컨택</span></p>
@@ -112,8 +136,8 @@
                       </a>
                     </li>
                     <li class="content__line list--body">
-                      <a href="./contact/contactList.html" class="link-area">
-                        <p class="line__item itemNo"><span>2</span></p>
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>8</span></p>
                         <p class="line__item itemCode"><span>3</span></p>
                         <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)</span></p>
                         <p class="line__item itemType"><span>컨택</span></p>
@@ -122,7 +146,79 @@
                       </a>
                     </li>
                     <li class="content__line list--body">
-                      <a href="/contactList.html" class="link-area"></a>
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>7</span></p>
+                        <p class="line__item itemCode"><span>3</span></p>
+                        <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-05</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>6</span></p>
+                        <p class="line__item itemCode"><span>3</span></p>
+                        <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-05</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>5</span></p>
+                        <p class="line__item itemCode"><span>3</span></p>
+                        <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)목재산업 동향 조사(상반기 1월~6월)목재산업 동향
+                            조사(상반기 1월~6월)</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-05</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>4</span></p>
+                        <p class="line__item itemCode"><span>3</span></p>
+                        <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)목재산업 동향 조사(상반기 1월~6월)목재산업 동향
+                            조사(상반기 1월~6월)</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-05</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>3</span></p>
+                        <p class="line__item itemCode"><span>3</span></p>
+                        <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)목재산업 동향 조사(상반기 1월~6월)목재산업 동향
+                            조사(상반기 1월~6월)</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-05</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>2</span></p>
+                        <p class="line__item itemCode"><span>3</span></p>
+                        <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)목재산업 동향 조사(상반기 1월~6월)목재산업 동향
+                            조사(상반기 1월~6월)</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-05</span></p>
+                      </a>
+                    </li>
+                    <li class="content__line list--body">
+                      <a href="./contact/contact_list.html" class="link-area">
+                        <p class="line__item itemNo"><span>1</span></p>
+                        <p class="line__item itemCode"><span>3</span></p>
+                        <p class="line__item itemName"><span>2023년 목재산업 동향 조사(상반기 1월~6월)목재산업 동향 조사(상반기 1월~6월)목재산업 동향
+                            조사(상반기 1월~6월)</span></p>
+                        <p class="line__item itemType"><span>컨택</span></p>
+                        <p class="line__item itemState"><span>진행 중</span></p>
+                        <p class="line__item itemDate"><span>2023-07-05</span></p>
+                      </a>
                     </li>
                   </ul>
                 </div>

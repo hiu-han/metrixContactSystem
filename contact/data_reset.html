@@ -14,6 +14,16 @@
   <title>Contact System</title>
 
   <link rel="stylesheet" href="/public/css/style.css">
+
+  <style>
+    .gnb__item#gnbContact>a {
+      color: var(--color-primary);
+    }
+
+    .gnb__item#gnbContact>a::before {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,8 +31,8 @@
   <div id="wrap" class="dataResetPage">
     <div id="header"></div>
 
-    <div id="main" class="center w-520">
-      <div class="wrapper">
+    <div id="main">
+      <div class="wrapper w-720">
         <!-- 페이지 탑 섹션 -->
         <section class="page-top">
           <div class="section__inner">
@@ -43,10 +53,6 @@
             <!-- 섹션 컨텐츠 -->
             <div class="section-content__wrap">
               <div class="section-content__inner table">
-                <!-- 컨텐츠 유틸 랩 // 테이블형식 대응 -->
-                <div class="content-util__wrap">
-                  <p class="btn link"><button>초기화</button></p>
-                </div>
                 <!-- 컨텐츠 랩 // 테이블 형식 -->
                 <div class="content__wrap table">
                   <table class="content--table">
@@ -55,19 +61,31 @@
                     </colgroup>
                     <thead>
                       <tr class="content__line table--head">
-                        <th class="blind">empty</th>
-                        <th>정보</th>
+                        <th colspan="2">정보</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="content__line table--body">
                         <th>Resid</th>
                         <td>
-
+                          <div class="td__inner">
+                            <label class="input-label">
+                              <input type="text" placeholder="초기화를 진행할 resid 입력">
+                            </label>
+                          </div>
                         </td>
                       </tr>
                     </tbody>
                   </table>
+                </div>
+                <!-- 컨텐츠 바텀 버튼 랩 -->
+                <div class="btn__wrap btn--bottom">
+                  <p class="btn type04 goBack">
+                    <a href="./worker_list.html">목록 가기</a>
+                  </p>
+                  <p class="btn type-red goSave">
+                    <a href="./worker_list.html">초기화</a>
+                  </p>
                 </div>
               </div>
             </div>

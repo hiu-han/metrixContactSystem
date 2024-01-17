@@ -14,6 +14,16 @@
   <title>Contact System</title>
 
   <link rel="stylesheet" href="/public/css/style.css">
+
+  <style>
+    .gnb__item#gnbReport>a {
+      color: var(--color-primary);
+    }
+
+    .gnb__item#gnbReport>a::before {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,12 +31,12 @@
   <div id="wrap" class="reportPage">
     <div id="header"></div>
 
-    <div id="main" class="center w-980">
-      <div class="wrapper">
+    <div id="main">
+      <div class="wrapper w-980">
         <!-- 페이지 탑 섹션 -->
         <section class="page-top">
           <div class="section__inner">
-            <h2 class="page-title">리포트</h2>
+            <h2 class="page-title">컨택 현황</h2>
           </div>
         </section>
 
@@ -41,9 +51,19 @@
             <div class="section-content__wrap">
               <div class="section-content__inner table">
                 <!-- 컨텐츠 랩 // 테이블 형식 -->
-                <div class="content__Wrap table">
+                <div class="content__wrap table">
                   <table class="content--table">
                     <colgroup>
+                      <col width="">
+                      <col width="">
+                      <col width="">
+                      <col width="">
+                      <col width="">
+                      <col width="">
+                      <col width="">
+                      <col width="">
+                      <col width="">
+                      <col width="">
                       <col width="">
                     </colgroup>
                     <thead>
@@ -63,7 +83,7 @@
                     </thead>
                     <tbody>
                       <tr class="content__line table--body">
-                        <th>1. 컨택완료</th>
+                        <th>0. 회수</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -76,7 +96,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>2. 응답 거절(사유 작성 필요)</th>
+                        <th>1. 조사 완료</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -89,7 +109,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>3. 비수신(4회 미만)</th>
+                        <th>2-1. 컨택 성공(메일 발송)</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -102,7 +122,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>4. 장기 비수신(4회 이상)</th>
+                        <th>2-2. 컨택 성공(방문)</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -115,7 +135,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>5. 장기 출타</th>
+                        <th>3. 재통화 예약</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -128,7 +148,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>6. 질병(몸이 아파서)</th>
+                        <th>4. 비수신</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -141,7 +161,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>7. 병원 입원</th>
+                        <th>5. 부재</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -154,7 +174,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>8. 조사 대상자 아님(만17세 이하, 시설 장애인, 서울 외 거주)</th>
+                        <th>6. 출장</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -167,7 +187,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>9. 이사 등으로 조사 불가지역거주(해외 이민, 서울 외 지역으로 이사)</th>
+                        <th>7. 거절</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -180,7 +200,7 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>10. 기타(사유 작성 필요)</th>
+                        <th>8. 결번·번호 오류</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -193,7 +213,72 @@
                         <td>0</td>
                       </tr>
                       <tr class="content__line table--body">
-                        <th>11. 장애등록 취소</th>
+                        <th>9. 중복</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>10. 조사 대상 아님</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>11. 자료 발송</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>12. 기타</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>13. 독려</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>14. 폐업</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>

@@ -22,11 +22,11 @@
     <div id="header"></div>
 
     <div id="main">
-      <div class="wrapper">
+      <div class="wrapper w-720">
         <!-- 페이지 탑 섹션 -->
         <section class="page-top">
           <div class="section__inner">
-            <h2 class="page-title">메일 페이지</h2>
+            <h2 class="page-title">메일 미리보기</h2>
           </div>
         </section>
 
@@ -42,13 +42,24 @@
               <div class="section-content__inner">
                 <!-- 컨텐츠 유틸 랩 -->
                 <div class="content-util__wrap">
-                  <p class="btn mailEdit"><button>메일 수정</button></p>
+                  <div class="content-util--left"></div>
+                  <div class="content-util--right">
+                    <p class="btn type01 mailEdit"><button>메일 수정</button></p>
+                  </div>
                 </div>
                 <!-- 컨텐츠 랩 // 메일 뷰 형식 -->
                 <div class="content__wrap mailPreview">
                   <div class="mail-viewer">
                     <div class="viewer__inner">
+                      <!-- 등록된 메일 정보가 없을 경우 -->
+                      <div class="mail__box empty">
+                        등록된 메일 내용이 없습니다.
+                      </div>
+
                       <!----- 메일 프리뷰 위치 ----->
+                      <div class="mail__box">
+                        <div class="dummy-box"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
