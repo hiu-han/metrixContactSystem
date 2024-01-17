@@ -12,7 +12,6 @@
   --color-ui-backcolor: #a6aeb4;
   --color-ui-hover-border: #9aafbe;
 
-  /* --color-primary: #8d80d1; */
   --color-primary: #6f59c9;
   --color-primary-hover: #614bba;
   --color-secondary: #afa6df;
@@ -54,7 +53,6 @@
 }
 
 #wrap .page-content {
-  /* padding: 24px; */
   padding-top: 24px;
   margin-bottom: 44px;
   border-top: 3px solid #333;
@@ -599,7 +597,6 @@
   margin-top: 1px;
   margin-right: 4px;
   border-radius: 50%;
-  /* background-color: tomato; */
   background-image: url("../img/icon/icon-x-o.svg");
   background-repeat: no-repeat;
   background-size: contain;
