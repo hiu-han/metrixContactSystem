@@ -1,6 +1,6 @@
 /*** LAYOUT ***/
 #wrap {
-  background-color: #f9fafc;
+  background-color: var(--color-bg-body);
   min-width: 1400px;
   overflow: hidden;
 }

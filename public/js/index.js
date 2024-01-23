@@ -4,6 +4,5 @@ $(document).ready(function () {
   /** */
   $('#contentListOptionOpener').on('click', function () {
     $(this).toggleClass(NOWON_CLASSNAME);
-    console.log('hello');
   });
 });

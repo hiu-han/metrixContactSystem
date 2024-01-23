@@ -236,18 +236,23 @@ input[type='checkbox']:checked + .label-txt::before {
 }
 
 /** INPUT -> RADIO **/
-.type__item {
+.type__item,
+.input__wrap.wrap--radio .input-label {
   padding: 5px 4px;
 }
-.type__item input[type='radio'] {
+.type__item input[type='radio'],
+.input__wrap.wrap--radio input[type='radio'] {
   display: none;
 }
-.type__item .label-txt {
+.type__item .label-txt,
+.input__wrap.wrap--radio .label-txt {
   position: relative;
   padding-left: 20px;
 }
 .type__item .label-txt::before,
-.type__item .label-txt::after {
+.type__item .label-txt::after,
+.input__wrap.wrap--radio .label-txt::before,
+.input__wrap.wrap--radio .label-txt::after {
   content: '';
   display: block;
   position: absolute;
@@ -255,27 +260,32 @@ input[type='checkbox']:checked + .label-txt::before {
   left: 7px;
   transform: translate(-50%, -50%);
 }
-.type__item .label-txt::before {
+.type__item .label-txt::before,
+.input__wrap.wrap--radio .label-txt::before {
   width: 14px;
   height: 14px;
   border-radius: 4px;
   border: 1px solid var(--color-line--input-default);
   background-color: #f4f4f7;
 }
-.type__item .label-txt::after {
+.type__item .label-txt::after,
+.input__wrap.wrap--radio .label-txt::after {
   display: none;
   width: 9px;
   height: 9px;
   border-radius: 2px;
   background-color: var(--color-primary);
 }
-.type__item input[type='radio']:checked + .label-txt::before {
+.type__item input[type='radio']:checked + .label-txt::before,
+.input__wrap.wrap--radio input[type='radio']:checked + .label-txt::before {
   border: 1px solid var(--color-primary);
 }
-.type__item input[type='radio']:checked + .label-txt::after {
+.type__item input[type='radio']:checked + .label-txt::after,
+.input__wrap.wrap--radio input[type='radio']:checked + .label-txt::after {
   display: block;
 }
-.type__item .label-txt {
+.type__item .label-txt,
+.input__wrap.wrap--radio .label-txt {
   cursor: pointer;
 }
 
@@ -284,6 +294,11 @@ input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+/** TEXTAREA **/
+.td__inner textarea {
+  width: 100%;
 }
 
 /** PAGINATION **/
