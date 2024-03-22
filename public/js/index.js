@@ -5,4 +5,7 @@ $(document).ready(function () {
   $('#contentListOptionOpener').on('click', function () {
     $(this).toggleClass(NOWON_CLASSNAME);
   });
+  $('#mailAddOptionOpener').on('click', function () {
+    $(this).toggleClass(NOWON_CLASSNAME);
+  });
 });

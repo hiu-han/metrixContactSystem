@@ -56,31 +56,6 @@
   font-size: 26px;
   font-weight: 700;
 }
-.page-info {
-  margin-top: 6px;
-}
-.page-info > .info-txt {
-  position: relative;
-  padding-left: 10px;
-  margin-bottom: 3px;
-}
-.page-info > .info-txt:last-child {
-  margin-bottom: 0;
-}
-.page-info > .info-txt::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 5px;
-  height: 2px;
-  background-color: #818181;
-}
-.page-info > .info-txt > strong {
-  font-weight: 600;
-}
-
 #wrap .page-content {
   padding-top: 24px;
   margin-bottom: 44px;
@@ -117,36 +92,6 @@
   width: 5px;
   height: 2px;
   background-color: #818181;
-}
-
-/** MAIN -> LOGIN **/
-.page-content.login .section__inner {
-  padding: 14px 54px 0;
-}
-.input--login .input-label.id {
-  display: block;
-  margin-bottom: 14px;
-}
-.input--login .label--txt {
-  display: inline-block;
-  margin-bottom: 8px;
-  font-size: 18px;
-  font-weight: 500;
-}
-.input--login .input-label.id .label--txt {
-  font-size: 19px;
-}
-.input--login input[type='text'],
-.input--login input[type='password'] {
-  width: 100%;
-  padding: 0 10px;
-  line-height: 40px;
-}
-.page-content.login .btn.login {
-}
-.page-content.login .btn.login > a {
-  height: 44px;
-  line-height: 44px;
 }
 
 /** MAIN -> LIST UTIL **/
@@ -306,39 +251,22 @@
   flex-wrap: nowrap;
   gap: 8px;
 }
-.option-select__wrap {
+.util--option-select .option-select__wrap {
   position: relative;
 }
-.option-select__wrap .option-drawer {
+.util--option-select .option-drawer {
   display: none;
   position: absolute;
   top: 36px;
   right: -14px;
   width: 500px;
-  max-height: 66vh;
   border-radius: 4px;
   border: 1px solid var(--color-line--input-hover);
   background-color: #fff;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.15);
-  overflow-y: auto;
   z-index: 100;
 }
-.option-select__wrap #mailAddOptionOpener + .option-drawer {
-  top: unset;
-  bottom: 38px;
-  left: -14px;
-  right: unset;
-  width: 90%;
-  max-height: 46vh;
-}
-.option-select__wrap
-  #mailAddOptionOpener
-  + .option-drawer
-  .option-group__item
-  .option__item {
-  width: 32%;
-}
-.option-select__wrap .option-activated.nowOn + .option-drawer {
+.util--option-select .option-activated.nowOn + .option-drawer {
   display: block;
 }
 .option-drawer .option-group__list {
@@ -382,7 +310,7 @@
 }
 .option-drawer .option-group__item .option__item {
   display: inline-block;
-  width: 49%;
+  width: 48%;
   padding: 4px 6px;
   border-radius: 6px;
   cursor: pointer;
@@ -439,9 +367,7 @@
 .content__wrap.table tbody tr:nth-child(even) td {
   background-color: var(--color-bg-tertiary-hover);
 }
-.details--info__box .content__wrap.table tbody tr:nth-child(even) td,
-.page-content.mailAdd .content__wrap.table tbody tr:nth-child(even) td,
-.page-content.workerView .content__wrap.table tbody tr:nth-child(even) td {
+.details--info__box .content__wrap.table tbody tr:nth-child(even) td {
   background-color: transparent;
 }
 .content__wrap.table tbody th {
@@ -464,6 +390,17 @@
 .details--info__box .content__wrap.table tr th:nth-child(2),
 .details--info__box .content__wrap.table tr td:nth-child(2) {
   width: 70%;
+}
+.content__wrap.table td .input-label input[type='text'],
+.content__wrap.table td .input-label input[type='number'],
+.content__wrap.table td .input-label input[type='password'],
+.content__wrap.table td .input-label input[type='email'] {
+  width: 100%;
+  padding: 0 6px;
+  border-radius: 2px;
+  border: 1px solid var(--color-line--input-default);
+  background-color: var(--color-bg-input);
+  line-height: 26px;
 }
 .content__wrap.table td .input-label input:focus {
   border: 1px solid var(--color-line--input-hover);
@@ -740,6 +677,31 @@
 }
 
 /** MAIN -> WORKER VIEW **/
+#wrap.workerViewPage .page-info {
+  margin-top: 6px;
+}
+#wrap.workerViewPage .page-info > .info-txt {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 3px;
+}
+#wrap.workerViewPage .page-info > .info-txt:last-child {
+  margin-bottom: 0;
+}
+#wrap.workerViewPage .page-info > .info-txt::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 2px;
+  background-color: #818181;
+}
+#wrap.workerViewPage .page-info > .info-txt > strong {
+  font-weight: 600;
+}
+
 .content__wrap.workerView tr th:first-child,
 .content__wrap.workerView tr td:first-child {
   width: 25%;

@@ -118,32 +118,12 @@ table button {
 }
 
 /*** INPUT ***/
-.input-label input[type='text'],
-.input-label input[type='number'],
-.input-label input[type='password'],
-.input-label input[type='email'] {
-  padding: 0 6px;
-  border-radius: 2px;
-  border: 1px solid var(--color-line--input-default);
-  background-color: var(--color-bg-input);
-  line-height: 26px;
-}
-.content__wrap.table td .input-label input[type='text'],
-.content__wrap.table td .input-label input[type='number'],
-.content__wrap.table td .input-label input[type='password'],
-.content__wrap.table td .input-label input[type='email'] {
-  width: 100%;
-}
-input[type='text']:read-only,
-input[type='email']:read-only {
-  background-color: var(--color-bg-tertiary-hover);
-}
 /** INPUT -> SEARCH BOX **/
 .search__wrap {
   display: inline-block;
 }
 .search__wrap > .input-label,
-.option-select__wrap .option-activated .input-label {
+.util--option-select .option-activated .input-label {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -151,21 +131,21 @@ input[type='email']:read-only {
 }
 .search__wrap > .input-label > input,
 .search__wrap button,
-.option-select__wrap .option-activated .input-label > input,
-.option-select__wrap .option-activated .input-label > .btn.openThis {
+.util--option-select .option-activated .input-label > input,
+.util--option-select .option-activated .input-label > .btn.openThis {
   height: 36px;
   padding: 0 10px;
   border: 1px solid var(--color-line--input-default);
   font-size: 14px;
 }
-.option-select__wrap .option-activated .input-label > .btn.openThis {
+.util--option-select .option-activated .input-label > .btn.openThis {
   line-height: 34px;
   cursor: pointer;
 }
 .search__wrap > .input-label > input:focus,
 .search__wrap > .input-label > input:focus + button,
-.option-select__wrap .option-activated .input-label > input:focus,
-.option-select__wrap
+.util--option-select .option-activated .input-label > input:focus,
+.util--option-select
   .option-activated
   .input-label
   > input:focus
@@ -173,14 +153,14 @@ input[type='email']:read-only {
   border: 1px solid var(--color-line--input-hover);
 }
 .search__wrap button,
-.option-select__wrap .option-activated .input-label > .btn.openThis {
+.util--option-select .option-activated .input-label > .btn.openThis {
   margin-left: -1px;
   background-color: var(--color-bg-primary);
   border: 1px solid var(--color-bg-primary);
   color: #fff;
 }
 .search__wrap button:hover,
-.option-select__wrap .option-activated .input-label > .btn.openThis:hover {
+.util--option-select .option-activated .input-label > .btn.openThis:hover {
   background-color: var(--color-bg-primary-hover);
 }
 
@@ -314,17 +294,6 @@ input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-/** TEXTAREA **/
-textarea {
-  width: 100%;
-  padding: 4px 6px;
-  border: 1px solid var(--color-line--input-default);
-  resize: none;
-}
-.td__inner textarea {
-  width: 100%;
 }
 
 /** PAGINATION **/

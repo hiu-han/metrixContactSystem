@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact System">
+  <meta property="og:url" content="http://metrix.urx.co.kr">
+  <meta property="og:description" content="MetriX URX Contact System">
+  <meta property="og:image" content="./public/img/common/img-share.png">
+  <link rel="short cut icon" type="image/x-icon" href="./public/img/icon/favicon.png">
+  <title>Contact System</title>
+
+  <link rel="stylesheet" href="/public/css/style.css">
+
+  <style>
+    .gnb__item#gnbContact>a {
+      color: var(--color-primary);
+    }
+
+    .gnb__item#gnbContact>a::before {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 설문리스트 추가 페이지 -->
+  <div id="wrap" class="mailInfoPage">
+    <div id="header" class="typeIndex"></div>
+
+    <div id="main">
+      <div class="wrapper w-980">
+        <!-- 페이지 탑 섹션 -->
+        <section class="page-top">
+          <div class="section__inner">
+            <h2 class="page-title">메일페이지 상세</h2>
+          </div>
+        </section>
+
+        <!-- 페이지 컨텐츠 섹션 -->
+        <section class="page-content mailInfo">
+          <div class="section__inner">
+            <!-- 섹션 컨텐츠 -->
+            <div class="section-content__wrap">
+              <div class="section-content__inner">
+                <!-- 컨텐츠 유틸 랩 // 리스트형식 대응 -->
+                <div class="content-util__wrap list">
+                  <div class="content-util--left">
+                    <p class="btn type04 listUtil back"><button>메일페이지</button></p>
+                  </div>
+                  <div class="content-util--right">
+                    <p class="btn type01 listUtil save"><button>수정</button></p>
+                  </div>
+                </div>
+                <!-- 컨텐츠 랩 // 리스트형식 -->
+                <div class="content__wrap table">
+                  <table class="content--table">
+                    <colgroup>
+                      <col width="32%">
+                      <col width="68%">
+                    </colgroup>
+                    <thead>
+                      <tr class="content__line table--head">
+                        <th colspan="2">정보</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="content__line table--body">
+                        <th>이메일 제목</th>
+                        <td><label class="input-label"><input type="text" placeholder="이메일 제목 입력"
+                              value="지방자치단체 중소기업지원사업 사전협의제도 발전을 위한 설문조사 실시 안내"></label></td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>발송자명</th>
+                        <td><label class="input-label"><input type="text" placeholder="발송자명 입력"
+                              value="(주)메트릭스알앤씨"></label></td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>발송자 이메일</th>
+                        <td><label class="input-label"><input type="text" placeholder="발송자 이메일 주소 입력"
+                              value="ejyang@metrix.co.kr"></label></td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>상단 내용</th>
+                        <td>
+                          <div class="td__inner"><textarea name="" id="" cols="60" rows="18">
+                            안녕하십니까? 중소벤처기업연구원에서 주관하는 '지방자치단체 중소기업지원사업 사전협의제도 발전을 위한 조사'를 수행하는 조사전문업체 (주)메트릭스R&C입니다.<br>
+설문조사에 참여하시면, 감사의 마음을 담아 조사 참여자 전원 <strong>1만원 상당 스타벅스 기프티콘</strong>을 지급해드릴 예정입니다.<br>향후 지자체 중소기업지원사업 사전협의제도 발전을 위해 조사에 참여해주시길 부탁드립니다.<br>
+
+많은 참여와 관심 부탁드립니다.<br>감사합니다.<br><br>
+
+해당 설문은 사전협의를 신청해주셨던 협의사업 담당자 및 지자체 사전협의 담당자를 대상으로 발송되었습니다.
+
+<a download="지방자치단체 중소기업 지원사업 사전협의 제도발전을 위한 설문조사 협조요청 공문.pdf" href="https://metworks.co.kr/upload/urx/2023117.pdf">지방자치단체 중소기업 지원사업 사전협의 제도발전을 위한 설문조사 협조요청 공문 다운로드</a>  
+                          </textarea></div>
+                        </td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>하단 내용</th>
+                        <td>
+                          <div class="td__inner"><textarea name="" id="" cols="60" rows="10">
+                            조사 주관기관 : 신지영 선임연구원 (☎ 02-707-8242)
+조사 수행기관 : 양은지 연구원 (☎ 02-6377-0703)11
+                          </textarea></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </div>
+
+  <script src="/public/js/jquery-3.5.1.js"></script>
+  <script src="/public/js/include.js"></script>
+  <script src="/public/js/index.js"></script>
+</body>
+
+</html>

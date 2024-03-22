@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact System">
+  <meta property="og:url" content="http://metrix.urx.co.kr">
+  <meta property="og:description" content="MetriX URX Contact System">
+  <meta property="og:image" content="/public/img/common/img-share.png">
+  <link rel="short cut icon" type="image/x-icon" href="/public/img/icon/favicon.png">
+  <title>Contact System</title>
+
+  <link rel="stylesheet" href="/public/css/style.css">
+
+  <style>
+    .gnb__item#gnbContact>a {
+      color: var(--color-primary);
+    }
+
+    .gnb__item#gnbContact>a::before {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 설문리스트 추가 페이지 -->
+  <div id="wrap" class="mailAddPage">
+    <div id="header"></div>
+
+    <div id="main">
+      <div class="wrapper w-980">
+        <!-- 페이지 탑 섹션 -->
+        <section class="page-top">
+          <div class="section__inner">
+            <h2 class="page-title">메일발송 등록</h2>
+            <div class="page-info">
+              <p class="info-txt">메일 내용 수정은 <strong>메일페이지 내 페이지수정 버튼</strong> 클릭 시 이용 가능합니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 페이지 컨텐츠 섹션 -->
+        <section class="page-content mailAdd">
+          <div class="section__inner">
+            <!-- 섹션 컨텐츠 -->
+            <div class="section-content__wrap">
+              <div class="section-content__inner">
+                <!-- 컨텐츠 유틸 랩 // 리스트형식 대응 -->
+                <div class="content-util__wrap list">
+                  <div class="content-util--left">
+                    <p class="btn type04 listUtil back"><button>목록 가기</button></p>
+                  </div>
+                  <div class="content-util--right">
+                    <p class="btn type01 listUtil save"><button>등록</button></p>
+                  </div>
+                </div>
+                <!-- 컨텐츠 랩 // 리스트형식 -->
+                <div class="content__wrap table">
+                  <table class="content--table">
+                    <colgroup>
+                      <col width="32%">
+                      <col width="68%">
+                    </colgroup>
+                    <thead>
+                      <tr class="content__line table--head">
+                        <th colspan="2">작성</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="content__line table--body">
+                        <th>이메일 제목</th>
+                        <td><label class="input-label"><input type="text" value="『농업법인 현황조사』이용자 만족도 조사 – 협조요청"
+                              readonly></label>
+                        </td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>발송자명</th>
+                        <td><label class="input-label"><input type="text" value="(주)메트릭스" readonly></label>
+                        </td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>발송 주소</th>
+                        <td><label class="input-label"><input type="text" value="shkim5@matrix.co.kr" readonly></label>
+                        </td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>수신대상자(resid)</th>
+                        <td>
+                          <div class="td__inner"><textarea name="" id="" cols="60" rows="4"></textarea></div>
+                        </td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>필터</th>
+                        <td>
+                          <div class="option-select__wrap">
+                            <!-- 활성화된 옵션 내역 input창 -->
+                            <div id="mailAddOptionOpener" class="option-activated">
+                              <label class="input-label">
+                                <input type="text" placeholder="필터 선택">
+                                <p class="btn openThis">open</p>
+                              </label>
+                            </div>
+                            <!-- 옵션리스트 서랍 // 체크박스 -->
+                            <div class="option-drawer">
+                              <ul class="option-group__list">
+                                <!-- 옵션 그룹 아이템 // 구분 -->
+                                <li class="option-group__item">
+                                  <p class="option-group--name">결과</p>
+                                  <ul class="option__list">
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">0. 회수완료</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">1. 조사성공</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">2. 컨택성공</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">3. 비수신</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">4. 부재중</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">5. 재통화 예약</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">6. 거절</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">7. 조사대상 아님</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">8. 결번</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">9. 번호틀림 / 타인수신</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">10. 기타</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">11. 수신거부</span>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="option-group__item">
+                                  <p class="option-group--name">컨택원</p>
+                                  <ul class="option__list">
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">김경순</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">김미향</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">1111</span>
+                                      </label>
+                                    </li>
+                                    <li class="option__item">
+                                      <label class="option-label">
+                                        <input type="checkbox"><span class="label-txt">미할당</span>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </div>
+
+  <script src="/public/js/jquery-3.5.1.js"></script>
+  <script src="/public/js/include.js"></script>
+  <script src="/public/js/index.js"></script>
+</body>
+
+</html>

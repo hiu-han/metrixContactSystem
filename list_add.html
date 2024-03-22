@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact System">
+  <meta property="og:url" content="http://metrix.urx.co.kr">
+  <meta property="og:description" content="MetriX URX Contact System">
+  <meta property="og:image" content="./public/img/common/img-share.png">
+  <link rel="short cut icon" type="image/x-icon" href="./public/img/icon/favicon.png">
+  <title>Contact System</title>
+
+  <link rel="stylesheet" href="./public/css/style.css">
+
+  <style>
+    .gnb__item#gnbMetrix>a {
+      color: var(--color-primary);
+    }
+
+    .gnb__item#gnbMetrix>a::before {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 설문리스트 추가 페이지 -->
+  <div id="wrap" class="listAddPage">
+    <div id="header" class="typeIndex"></div>
+
+    <div id="main">
+      <div class="wrapper w-980">
+        <!-- 페이지 탑 섹션 -->
+        <section class="page-top">
+          <div class="section__inner">
+            <h2 class="page-title">설문 추가</h2>
+          </div>
+        </section>
+
+        <!-- 페이지 컨텐츠 섹션 -->
+        <section class="page-content listAdd">
+          <div class="section__inner">
+            <!-- 섹션 컨텐츠 -->
+            <div class="section-content__wrap">
+              <div class="section-content__inner">
+                <!-- 컨텐츠 유틸 랩 // 리스트형식 대응 -->
+                <div class="content-util__wrap list">
+                  <div class="content-util--left">
+                    <p class="btn type04 listUtil back"><button>목록 가기</button></p>
+                  </div>
+                  <div class="content-util--right">
+                    <p class="btn type01 listUtil save"><button>저장</button></p>
+                  </div>
+                </div>
+                <!-- 컨텐츠 랩 // 리스트형식 -->
+                <div class="content__wrap table">
+                  <table class="content--table">
+                    <colgroup>
+                      <col width="32%">
+                      <col width="68%">
+                    </colgroup>
+                    <thead>
+                      <tr class="content__line table--head">
+                        <th colspan="2">정보</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="content__line table--body">
+                        <th>설문명</th>
+                        <td><label class="input-label"><input type="text" placeholder="설문명 입력"></label></td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>설문유형</th>
+                        <td>
+                          <div class="td__inner">
+                            <div class="input__wrap wrap--radio">
+                              <label class="input-label">
+                                <input type="radio" id="" name="radioContactType">
+                                <span class="label-txt">전화</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" id="" name="radioContactType">
+                                <span class="label-txt">패널</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" id="" name="radioContactType">
+                                <span class="label-txt">리스트</span>
+                              </label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>설문유형</th>
+                        <td>
+                          <div class="td__inner">
+                            <div class="input__wrap wrap--radio">
+                              <label class="input-label">
+                                <input type="radio" id="" name="radioContactState">
+                                <span class="label-txt">비활성</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" id="" name="radioContactState">
+                                <span class="label-txt">활성</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" id="" name="radioContactState">
+                                <span class="label-txt">마감</span>
+                              </label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="content__line table--body">
+                        <th>가이드 내용</th>
+                        <td>
+                          <div class="td__inner"><textarea name="" id="" cols="60" rows="4"></textarea></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </div>
+
+  <script src="/public/js/jquery-3.5.1.js"></script>
+  <script src="/public/js/include.js"></script>
+  <script src="/public/js/index.js"></script>
+</body>
+
+</html>
